@@ -9,6 +9,8 @@ import { broj1, broj2, Osoba, pi, imeAplikacije as mojaVarijabla, sum, oduzmi  }
 
 // 5.5
 import Komponenta1 from './Komponenta1';
+import Komponenta2 from './Komponenta2';
+import Komponenta3 from './Komponenta3';
 
 function App() {
   var zbroj = sum(10, 12) * pi + (broj1 * broj2);
@@ -19,8 +21,8 @@ function App() {
   var od = oduzmi(broj2, broj1);
   ////////
   //5.5
-  var prva = "prvi text";
-  var druga = "drugi text";
+  var prva = "prvi-text";
+  var druga = "drugi-text";
 
   //return (<Komponenta1/>);
   return (
@@ -42,6 +44,8 @@ function App() {
           </a>
       </header>
       <Komponenta1/>
+      <Komponenta2 podatak1={prva}/>
+      <Komponenta3 podatak1={prva} podatak2={druga}/>
     </div>
   );
 }
