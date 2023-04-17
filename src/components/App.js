@@ -8,8 +8,8 @@ import { broj1, broj2, Osoba, pi, imeAplikacije as mojaVarijabla, sum, oduzmi  }
 //import { sum, pi, imeAplikacije as mojaVarijabla, num1 as broj1, num2 as broj2 } from './Utility';
 
 // 5.5
-import Komponenta1 from './Komponenta1';
-import Komponenta2 from './Komponenta2';
+import { Komponenta1 } from'./Komponenta1';
+import { Komponenta2 } from './Komponenta2';
 import Komponenta3 from './Komponenta3';
 
 function App() {
