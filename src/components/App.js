@@ -14,6 +14,25 @@ import Komponenta3 from './Komponenta3';
 
 import { NovaKomponenta } from './NovaKomponenta';
 
+// 5.6
+import React from 'react';
+// 5.7
+import WelcomeFunctionFile from './WelcomeFunctionFile';
+import WelcomeClassFile from './WelcomeClassFile';
+
+
+// 5.6
+function WelcomeFunkcion() {
+  return <h1>Welcome! Komponenta definirana funkcijom.</h1>;
+}
+class WelcomeClass extends React.Component {
+  render() {
+    return <h2>Welcome! Komponenta definirana klasom.</h2>;
+  }
+}
+
+
+
 function App() {
   var zbroj = sum(10, 12) * pi + (broj1 * broj2);
   var rndStr =randomstring.generate({
@@ -49,6 +68,12 @@ function App() {
       <Komponenta2 podatak1={prva}/>
       <Komponenta3 podatak1={prva} podatak2={druga}/>
       <NovaKomponenta/>
+
+      <WelcomeFunkcion />
+      <WelcomeClass />
+
+      <WelcomeFunctionFile/>
+      <WelcomeClassFile />
     </div>
   );
 }
