@@ -12,6 +12,8 @@ import { Komponenta1 } from'./Komponenta1';
 import { Komponenta2 } from './Komponenta2';
 import Komponenta3 from './Komponenta3';
 
+import { NovaKomponenta } from './NovaKomponenta';
+
 function App() {
   var zbroj = sum(10, 12) * pi + (broj1 * broj2);
   var rndStr =randomstring.generate({
@@ -46,6 +48,7 @@ function App() {
       <Komponenta1/>
       <Komponenta2 podatak1={prva}/>
       <Komponenta3 podatak1={prva} podatak2={druga}/>
+      <NovaKomponenta/>
     </div>
   );
 }
