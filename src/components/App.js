@@ -12,6 +12,27 @@ import { Komponenta1 } from'./Komponenta1';
 import { Komponenta2 } from './Komponenta2';
 import Komponenta3 from './Komponenta3';
 
+import { GlavnaKomponenta } from './GlavnaKomponenta';
+//import React from "react";
+import {WelcomeFunkcija} from './WelcomeFunkcija';
+import {WelcomeKlasa} from './WelcomeKlasa';
+
+
+// function WelcomeFunkcija() {
+//   return (
+//     <h2>Welcome! Komponenta definirana funckijom.</h2>
+//   );
+// }
+
+// class WelcomeKlasa extends React.Component {
+//  render() {
+//    return (
+//     <h6>Welcome! Komponenta definirana klasom.</h6>
+//    );
+//  }
+// }
+
+
 function App() {
   var zbroj = sum(10, 12) * pi + (broj1 * broj2);
   var rndStr =randomstring.generate({
@@ -46,6 +67,10 @@ function App() {
       <Komponenta1/>
       <Komponenta2 podatak1={prva}/>
       <Komponenta3 podatak1={prva} podatak2={druga}/>
+
+      <GlavnaKomponenta/>
+      <WelcomeFunkcija />
+      <WelcomeKlasa/>
     </div>
   );
 }
