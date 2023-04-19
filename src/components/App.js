@@ -32,7 +32,6 @@ class WelcomeClass extends React.Component {
 }
 
 
-
 function App() {
   var zbroj = sum(10, 12) * pi + (broj1 * broj2);
   var rndStr =randomstring.generate({
