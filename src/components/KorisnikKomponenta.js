@@ -1,7 +1,7 @@
-export default function KorisnikKomponenta({ ime, godine, onNameChange }) {
+export default function KorisnikKomponenta({ ime, godine, onNameChange, onDelete }) {
     return (
       <div>
-        <p>
+        <p onClick={onDelete}>
           Pozdrav, moje ime je {ime} i imam {godine} godina.
         </p>
         <input
