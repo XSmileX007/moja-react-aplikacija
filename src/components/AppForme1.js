@@ -11,6 +11,7 @@ export default class App extends React.Component {
     event.preventDefault();
     const { value } = this.state;
 
+    //alert("Poslano je ime " + value);
     alert(`Poslano je ime ${value}`);
     this.setState({ value: '' });
   };

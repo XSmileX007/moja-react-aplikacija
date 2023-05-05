@@ -2,12 +2,12 @@ import React from 'react';
 import KorisnikKomponenta from './KorisnikKomponenta';
 import NoviKorisnikKomponenta from './NoviKorisnikKomponenta';
 
-export default class App extends React.Component {
+export default class AppForme2 extends React.Component {
   state = {
     korisnici: [
-      { id: 1, ime: 'Ivan', godine: 30 },
-      { id: 2, ime: 'Marko', godine: 35 },
-      { id: 3, ime: 'Ana', godine: 25 },
+      { id: new Date().getMilliseconds(), ime: 'Ivan', godine: 30 },
+      { id: new Date().getMilliseconds(), ime: 'Marko', godine: 35 },
+      { id: new Date().getMilliseconds(), ime: 'Ana', godine: 25 },
     ],
   };
 
@@ -38,7 +38,7 @@ export default class App extends React.Component {
 
   addNewUser = ({ ime, godine }) => {
     const noviKorisnik = {
-      id: `${ime}_${new Date().getTime()}`,
+      id: `${ime}_${new Date().getMilliseconds()}`,
       ime,
       godine,
     };
