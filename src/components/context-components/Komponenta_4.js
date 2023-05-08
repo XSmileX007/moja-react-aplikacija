@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 import { Consumer } from '../context/Context';
-import Contex from '../context/Context';
+import Context from '../context/Context';
 
 export default function Komponenta_4() {
-  const contextObject = useContext(Contex);
+  const contextObject = useContext(Context);
   const { text, number } = contextObject;
 
   const editText = `${text} preko funkcije, a poslani broj je: ${number}`;

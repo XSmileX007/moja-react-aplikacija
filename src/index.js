@@ -10,9 +10,9 @@ import './index.css';
 // 5.15 - Forme 2
 //import AppForme2 from './components/AppForme2';
 // 5.16 - Context
-import AppContext from './components/AppContext';
+//import AppContext from './components/AppContext';
 // 5.17 - HOC
-//import AppHOC from './components/AppHOC';
+import AppHOC from './components/AppHOC';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppContext/>);
+root.render(<AppHOC/>);

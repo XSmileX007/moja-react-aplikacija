@@ -1,7 +1,7 @@
 import React from 'react';
 
 const withColor = Element => ({ color, ...otherProps }) => (
-  <Element {...otherProps} style={{ backgroundColor: color }} />
+  <Element {...otherProps} style={{backgroundColor: color,  display: "block"}} />
 );
 
 const Button = props => {
@@ -18,7 +18,10 @@ export default function AppHOC() {
         Ja sam crven!
       </ColoredButton>
       <ColoredButton color="yellow">
-        Ja sam zut!
+        Ja sam žuti!
+      </ColoredButton>
+      <ColoredButton color="green">
+        Ja sam žuti!
       </ColoredButton>
     </div>
   );
