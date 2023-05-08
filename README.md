@@ -123,6 +123,7 @@
 	7. Napraviti novu komponentu definiranu klasom koju poziva Komponenta 4, a isto treba ispisati vrijednosti Context-a na ekranu i koristiti kao varijablu
 
 # Zadatak 16 - HOC
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppHOC.js datoteku te nju importati u index.js
 ### U ovoj vježbi potrebno je napraviti sljedeće:
    	1. Napraviti novu React aplikaciju
 	2. Napraviti HOC withColor koji će postavljati stil komponente na način da:
