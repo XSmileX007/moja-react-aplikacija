@@ -123,10 +123,10 @@
 	7. Napraviti novu komponentu definiranu klasom koju poziva Komponenta 4, a isto treba ispisati vrijednosti Context-a na ekranu i koristiti kao varijablu
 
 # Zadatak 16 - HOC
-U ovoj vježbi potrebno je napraviti sljedeće:
-    1. Napraviti novu React aplikaciju
-    2. Napraviti HOC withColor koji će postavljati stil komponente na način da:
-        - primi prop "color"
-        - postavi style child komponente: const style = { backgroundColor: this.props.color };
-    3. Napraviti ColoredButton komponentu: const ColoredButton = withColor(Button);
-    4. Iscrtati nekoliko različitih ColoredButton komponenti, svaka od njih prima drugi color prop
+### U ovoj vježbi potrebno je napraviti sljedeće:
+   	1. Napraviti novu React aplikaciju
+	2. Napraviti HOC withColor koji će postavljati stil komponente na način da:
+		- primi prop "color"
+		- postavi style child komponente: const style = { backgroundColor: this.props.color };
+	3. Napraviti ColoredButton komponentu: const ColoredButton = withColor(Button);
+	4. Iscrtati nekoliko različitih ColoredButton komponenti, svaka od njih prima drugi color prop
