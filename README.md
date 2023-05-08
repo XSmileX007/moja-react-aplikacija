@@ -114,10 +114,19 @@
 
 # Zadatak 15 - React Context
 ### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppContext.js datoteku te nju importati u index.js
-	1) Napraviti Context komponentu
-	2) Napraviti četiri nested komponente
-	3) Postaviti App komponentu kao Context Provider i poslati neki tekst i broj
-	4) Postaviti zadnju komponentu kao Context Consumer
-	5) U komponenti definiranoj funkcijom ispisati na ekranu tekst koji je poslan preko Context-a
-	6) U komponenti definiranoj funkcijom koristiti tekst poslan preko Context-a kao varijablu
-	7) Napraviti novu komponentu definiranu klasom koju poziva Komponenta 4, a isto treba ispisati vrijednosti Context-a na ekranu i koristiti kao varijablu
+	1. Napraviti Context komponentu
+	2. Napraviti četiri nested komponente
+	3. Postaviti App komponentu kao Context Provider i poslati neki tekst i broj
+	4. Postaviti zadnju komponentu kao Context Consumer
+	5. U komponenti definiranoj funkcijom ispisati na ekranu tekst koji je poslan preko Context-a
+	6. U komponenti definiranoj funkcijom koristiti tekst poslan preko Context-a kao varijablu
+	7. Napraviti novu komponentu definiranu klasom koju poziva Komponenta 4, a isto treba ispisati vrijednosti Context-a na ekranu i koristiti kao varijablu
+
+# Zadatak 16 - HOC
+U ovoj vježbi potrebno je napraviti sljedeće:
+    1. Napraviti novu React aplikaciju
+    2. Napraviti HOC withColor koji će postavljati stil komponente na način da:
+        - primi prop "color"
+        - postavi style child komponente: const style = { backgroundColor: this.props.color };
+    3. Napraviti ColoredButton komponentu: const ColoredButton = withColor(Button);
+    4. Iscrtati nekoliko različitih ColoredButton komponenti, svaka od njih prima drugi color prop
