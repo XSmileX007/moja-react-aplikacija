@@ -2,6 +2,7 @@ import React from 'react';
 import Home from './Home';
 import { Route, Link, Routes, BrowserRouter} from "react-router-dom";
 import Adresa from './Adresa';
+import About from './About';
 
 const Kontakt = () => {
     return (
@@ -27,12 +28,16 @@ export default function AppRouter() {
           <li>
             <Link to="/kontakt/">Kontakt</Link>
           </li>
+          <li>
+            <Link to="/omeni/">O meni</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
-        <Route path="/" exact element={<Home/>} />
+        <Route path="/" element={<Home/>} />
         <Route path="/adresa/" element={<Adresa/>} />
         <Route path="/kontakt/" element={<Kontakt/>} />
+        <Route path="/omeni/" element={<About/>} />
       </Routes>
     </div>
     </BrowserRouter>
