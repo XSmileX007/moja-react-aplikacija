@@ -131,3 +131,11 @@
 		- postavi style child komponente: const style = { backgroundColor: this.props.color };
 	3. Napraviti ColoredButton komponentu: const ColoredButton = withColor(Button);
 	4. Iscrtati nekoliko različitih ColoredButton komponenti, svaka od njih prima drugi color prop
+
+# Zadatak 17 - React Router
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppRouter.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće:
+	1.	Napraviti ukupno četiri komponente u aplikaciji svaka komponenta mora prikazivati neki tekst (App + tri nove komponente)
+	2.	Instalirati paket  react-router-dom u aplikaciju i osigurati da je react-router-dom postavljen pod dependencies aplikacije
+	3.	Kosititi react router za prikazivanje različitih komponenti u aplikaciji, za različite web adrese (npr. http://localhost:3000/kontakt/)
+	4.	Dodati navigacijske linkove na vrh stranice, koje bi mijenjale web adrese i prikazivale druge komponente.

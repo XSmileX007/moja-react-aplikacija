@@ -12,7 +12,9 @@ import './index.css';
 // 5.16 - Context
 //import AppContext from './components/AppContext';
 // 5.17 - HOC
-import AppHOC from './components/AppHOC';
+//import AppHOC from './components/AppHOC';
+// 5.18 - ReactRouter
+import AppRouter from './components/AppRouter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppHOC/>);
+root.render(<AppRouter/>);
