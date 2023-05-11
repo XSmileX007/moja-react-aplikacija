@@ -1,8 +1,4 @@
-import {Component} from "react";
-import React from "react";
-
-export default class Adresa extends Component {
-    render() {
+const Adresa = () =>{
         return (
          <div>
         <h2>Adresa</h2>
@@ -10,5 +6,5 @@ export default class Adresa extends Component {
       </div>
       );
     }
-    
-  }
+      
+export default Adresa;
