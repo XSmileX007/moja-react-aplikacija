@@ -8,7 +8,17 @@ import './index.css';
 // 5.14 - Forme 1
 //import App from './components/AppForme1';
 // 5.15 - Forme 2
-import AppForme2 from './components/AppForme2';
+//import AppForme2 from './components/AppForme2';
+// 5.16 - Context
+//import AppContext from './components/AppContext';
+// 5.17 - HOC
+//import AppHOC from './components/AppHOC';
+// 5.18 - ReactRouter
+// import AppRouter from './components/AppRouter';
+// 5.19 - API
+//import AppAPI from './components/AppAPI';
+// 5.20 - GraphQL
+import AppGraphQL from './components/AppGraphQL';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppForme2/>);
+root.render(<AppGraphQL/>);

@@ -70,6 +70,7 @@
 	2. Unutar stanja (statea) komponente App pored polja korisnici potrebno je definirati proizvoljnu tekstualnu varijablu
 	3. Prikazati na ekranu vrijednosti iz stanja (statea), a proizvoljnu vrijednost prikazati preko children propsa.
 
+
 # Zadatak 10 - setState
 ### Početno stanje aplikacije je završno stanje prethodnog zadatka
 	1. Potrebno je dodati novu komponentu koja u sebi sadrži gumb
@@ -110,3 +111,60 @@
 	3. Nakon pritiska na tipku forme trake za unos teksta se moraju resetirati na početno stanje
 	4. Unos teksta za promjenu imena mora raditi i na novom korisniku
 	5. Tipka za promjenu godina mora raditi i na novom korisniku
+
+# Zadatak 16 - React Context
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppContext.js datoteku te nju importati u index.js
+	1. Napraviti Context komponentu
+	2. Napraviti četiri nested komponente
+	3. Postaviti App komponentu kao Context Provider i poslati neki tekst i broj
+	4. Postaviti zadnju komponentu kao Context Consumer
+	5. U komponenti definiranoj funkcijom ispisati na ekranu tekst koji je poslan preko Context-a
+	6. U komponenti definiranoj funkcijom koristiti tekst poslan preko Context-a kao varijablu
+	7. Napraviti novu komponentu definiranu klasom koju poziva Komponenta 4, a isto treba ispisati vrijednosti Context-a na ekranu i koristiti kao varijablu
+
+# Zadatak 17 - HOC
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppHOC.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće:
+   	1. Napraviti novu React aplikaciju
+	2. Napraviti HOC withColor koji će postavljati stil komponente na način da:
+		- primi prop "color"
+		- postavi style child komponente: const style = { backgroundColor: this.props.color };
+	3. Napraviti ColoredButton komponentu: const ColoredButton = withColor(Button);
+	4. Iscrtati nekoliko različitih ColoredButton komponenti, svaka od njih prima drugi color prop
+
+# Zadatak 18 - React Router
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppRouter.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće:
+	1.	Napraviti ukupno četiri komponente u aplikaciji svaka komponenta mora prikazivati neki tekst (App + tri nove komponente)
+	2.	Instalirati paket  react-router-dom u aplikaciju i osigurati da je react-router-dom postavljen pod dependencies aplikacije
+	3.	Kosititi react router za prikazivanje različitih komponenti u aplikaciji, za različite web adrese (npr. http://localhost:3000/kontakt/)
+	4.	Dodati navigacijske linkove na vrh stranice, koje bi mijenjale web adrese i prikazivale druge komponente.
+
+
+# Zadatak 19 - React REST API
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppAPI.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće:
+	Koristit ćemo NASA-in API koji omogućava dohvat slike dana.
+
+	Kako bismo dohvatili sliku dana, potrebno je pozvati metodu GET na sljedeći URL:
+	https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
+	Kao odgovor na ovaj poziv, dobiti ćemo JSON objekt u kojem se nalazi nekoliko bitnih atributa:
+	- url: URL slike
+	- title: naziv slike
+	- explanation: opis slike
+	(kako biste vidjeli puni odgovor, potrebno je kopirati URL za dohvat slike dana u web browser i pritisnuti tipku Enter)
+
+	U našoj React aplikaciji, potrebno je prikazati navedene 3 informacije (sliku, naziv i opis slike).
+
+	Napomena: kako bi se neka slika prikazala u React aplikaciji, potrebno je dodati sljedeći JSX odsječak:
+	<img src="url_slike" alt="opis_u_slucaju_da_slika_nije_ucitana" />
+
+	Npr: <img src="https://apod.nasa.gov/apod/image/1908/CannonSupernova_English_960.jpg" alt="Supernova Cannon" />
+
+# Zadatak 20 - React GraphQL
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppgraphQL.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće:
+	1. Instalirati Apollo, biblioteku za React Graphql (npm install apollo-boost @apollo/react-hooks graphql)
+	2. Napraviti upit prema GraphQL serveru (url servera: https://48p1r2roz4.sse.codesandbox.io/)
+	3. Ispisati listu s rezultatima na ekranu
