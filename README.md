@@ -139,3 +139,25 @@
 	2.	Instalirati paket  react-router-dom u aplikaciju i osigurati da je react-router-dom postavljen pod dependencies aplikacije
 	3.	Kosititi react router za prikazivanje različitih komponenti u aplikaciji, za različite web adrese (npr. http://localhost:3000/kontakt/)
 	4.	Dodati navigacijske linkove na vrh stranice, koje bi mijenjale web adrese i prikazivale druge komponente.
+
+
+# Zadatak 18 - React REST API
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppAPI.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće:
+	Koristit ćemo NASA-in API koji omogućava dohvat slike dana.
+
+	Kako bismo dohvatili sliku dana, potrebno je pozvati metodu GET na sljedeći URL:
+	https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+
+	Kao odgovor na ovaj poziv, dobiti ćemo JSON objekt u kojem se nalazi nekoliko bitnih atributa:
+	- url: URL slike
+	- title: naziv slike
+	- explanation: opis slike
+	(kako biste vidjeli puni odgovor, potrebno je kopirati URL za dohvat slike dana u web browser i pritisnuti tipku Enter)
+
+	U našoj React aplikaciji, potrebno je prikazati navedene 3 informacije (sliku, naziv i opis slike).
+
+	Napomena: kako bi se neka slika prikazala u React aplikaciji, potrebno je dodati sljedeći JSX odsječak:
+	<img src="url_slike" alt="opis_u_slucaju_da_slika_nije_ucitana" />
+
+	Npr: <img src="https://apod.nasa.gov/apod/image/1908/CannonSupernova_English_960.jpg" alt="Supernova Cannon" />

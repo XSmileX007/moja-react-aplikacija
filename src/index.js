@@ -14,7 +14,9 @@ import './index.css';
 // 5.17 - HOC
 //import AppHOC from './components/AppHOC';
 // 5.18 - ReactRouter
-import AppRouter from './components/AppRouter';
+// import AppRouter from './components/AppRouter';
+// 5.19 - API
+import AppAPI from './components/AppAPI';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppRouter/>);
+root.render(<AppAPI/>);
