@@ -16,7 +16,9 @@ import './index.css';
 // 5.18 - ReactRouter
 // import AppRouter from './components/AppRouter';
 // 5.19 - API
-import AppAPI from './components/AppAPI';
+//import AppAPI from './components/AppAPI';
+// 5.20 - GraphQL
+import AppGraphQL from './components/AppGraphQL';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppAPI/>);
+root.render(<AppGraphQL/>);

@@ -161,3 +161,10 @@
 	<img src="url_slike" alt="opis_u_slucaju_da_slika_nije_ucitana" />
 
 	Npr: <img src="https://apod.nasa.gov/apod/image/1908/CannonSupernova_English_960.jpg" alt="Supernova Cannon" />
+
+# Zadatak 19 - React GraphQL
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppgraphQL.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće:
+	1. Instalirati Apollo, biblioteku za React Graphql (npm install apollo-boost @apollo/react-hooks graphql)
+	2. Napraviti upit prema GraphQL serveru (url servera: https://48p1r2roz4.sse.codesandbox.io/)
+	3. Ispisati listu s rezultatima na ekranu
