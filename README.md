@@ -112,7 +112,7 @@
 	4. Unos teksta za promjenu imena mora raditi i na novom korisniku
 	5. Tipka za promjenu godina mora raditi i na novom korisniku
 
-# Zadatak 15 - React Context
+# Zadatak 16 - React Context
 ### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppContext.js datoteku te nju importati u index.js
 	1. Napraviti Context komponentu
 	2. Napraviti četiri nested komponente
@@ -122,7 +122,7 @@
 	6. U komponenti definiranoj funkcijom koristiti tekst poslan preko Context-a kao varijablu
 	7. Napraviti novu komponentu definiranu klasom koju poziva Komponenta 4, a isto treba ispisati vrijednosti Context-a na ekranu i koristiti kao varijablu
 
-# Zadatak 16 - HOC
+# Zadatak 17 - HOC
 ### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppHOC.js datoteku te nju importati u index.js
 ### U ovoj vježbi potrebno je napraviti sljedeće:
    	1. Napraviti novu React aplikaciju
@@ -132,7 +132,7 @@
 	3. Napraviti ColoredButton komponentu: const ColoredButton = withColor(Button);
 	4. Iscrtati nekoliko različitih ColoredButton komponenti, svaka od njih prima drugi color prop
 
-# Zadatak 17 - React Router
+# Zadatak 18 - React Router
 ### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppRouter.js datoteku te nju importati u index.js
 ### U ovoj vježbi potrebno je napraviti sljedeće:
 	1.	Napraviti ukupno četiri komponente u aplikaciji svaka komponenta mora prikazivati neki tekst (App + tri nove komponente)
@@ -141,7 +141,7 @@
 	4.	Dodati navigacijske linkove na vrh stranice, koje bi mijenjale web adrese i prikazivale druge komponente.
 
 
-# Zadatak 18 - React REST API
+# Zadatak 19 - React REST API
 ### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppAPI.js datoteku te nju importati u index.js
 ### U ovoj vježbi potrebno je napraviti sljedeće:
 	Koristit ćemo NASA-in API koji omogućava dohvat slike dana.
@@ -162,7 +162,7 @@
 
 	Npr: <img src="https://apod.nasa.gov/apod/image/1908/CannonSupernova_English_960.jpg" alt="Supernova Cannon" />
 
-# Zadatak 19 - React GraphQL
+# Zadatak 20 - React GraphQL
 ### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppgraphQL.js datoteku te nju importati u index.js
 ### U ovoj vježbi potrebno je napraviti sljedeće:
 	1. Instalirati Apollo, biblioteku za React Graphql (npm install apollo-boost @apollo/react-hooks graphql)
