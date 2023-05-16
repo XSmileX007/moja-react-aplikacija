@@ -18,7 +18,22 @@ import './index.css';
 // 5.19 - API
 //import AppAPI from './components/AppAPI';
 // 5.20 - GraphQL
-import AppGraphQL from './components/AppGraphQL';
+//import AppGraphQL from './components/AppGraphQL';
+// 5.21 - Redux
+import AppRedux from './components/AppRedux';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { reducer } from './components/utilities/ReduxFunkcije';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<AppGraphQL/>);
+
+// added for 5.21 - redux
+const store = createStore(reducer);
+//root.render(<AppGraphQL/>);
+// little bit changed render for 5.20 - redux
+root.render(
+    <Provider store={store}>
+        <AppRedux/>
+    </Provider>
+);
+
