@@ -178,14 +178,25 @@
     2. cd redux-test
     3. npm install --save redux react-redux
 
-U vježbi je potrebno napraviti jednostavan brojač:
-    - prikazati trenutno stanje brojača (početno 0)
-    - dodati gumb "+", na čiji klik se brojač povećava za jedan
-    - dodati gumb "-", na čiji klik se brojač smanjuje za jedan
-    - dodati gumb "Reset", na čiji klik se brojač postavljuje na 0
+	U vježbi je potrebno napraviti jednostavan brojač:
+		- prikazati trenutno stanje brojača (početno 0)
+		- dodati gumb "+", na čiji klik se brojač povećava za jedan
+		- dodati gumb "-", na čiji klik se brojač smanjuje za jedan
+		- dodati gumb "Reset", na čiji klik se brojač postavljuje na 0
 
-Stanje brojača zapisati u redux stanje:
-    - potrebno je napraviti akcije koje služe za povećavanje, smanjenje i resetiranje brojača
-    - potrebno je napraviti reducer koji reagira na navedene akcije i mijenja stanje (state) aplikacije prema tome
-    - potrebno je spojiti komponentu App na redux stanje pomoću metode "connect" i prikazati trenutno redux stanje
+	Stanje brojača zapisati u redux stanje:
+		- potrebno je napraviti akcije koje služe za povećavanje, smanjenje i resetiranje brojača
+		- potrebno je napraviti reducer koji reagira na navedene akcije i mijenja stanje (state) aplikacije prema tome
+		- potrebno je spojiti komponentu App na redux stanje pomoću metode "connect" i prikazati trenutno redux stanje
 
+# Zadatak 22 - React Redux-Thunk
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppReduxThunk.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće: 
+
+	Za ovu vježbu preuredit ćemo postojeću aplikaciju tako da koristi redux biblioteku.
+
+	Potrebno je:
+	- instalirati redux biblioteke: npm install --save redux react-redux redux-thunk
+	- kreirati akciju za dohvat informacija s NASA APIja
+	- kreirati reducer koji reagira na akciju
+	- komponenti App spojiti na redux stanje preko "connect" ili "useSelector" i "useDispatch" hookse
