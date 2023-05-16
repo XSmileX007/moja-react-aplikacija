@@ -168,3 +168,24 @@
 	1. Instalirati Apollo, biblioteku za React Graphql (npm install apollo-boost @apollo/react-hooks graphql)
 	2. Napraviti upit prema GraphQL serveru (url servera: https://48p1r2roz4.sse.codesandbox.io/)
 	3. Ispisati listu s rezultatima na ekranu
+
+# Zadatak 21 - React Redux
+### NAPOMENA: Za početno stanje aplikacije ćemo napraviti novu AppRedux.js datoteku te nju importati u index.js
+### U ovoj vježbi potrebno je napraviti sljedeće: 
+	React aplikaciju koja upravlja svojim stanjem pomoću Redux biblioteke.
+	Za početak, potrebno je kreirati novu aplikaciju i instalirati biblioteke redux i react-redux:
+    1. npx create-react-app redux-test
+    2. cd redux-test
+    3. npm install --save redux react-redux
+
+U vježbi je potrebno napraviti jednostavan brojač:
+    - prikazati trenutno stanje brojača (početno 0)
+    - dodati gumb "+", na čiji klik se brojač povećava za jedan
+    - dodati gumb "-", na čiji klik se brojač smanjuje za jedan
+    - dodati gumb "Reset", na čiji klik se brojač postavljuje na 0
+
+Stanje brojača zapisati u redux stanje:
+    - potrebno je napraviti akcije koje služe za povećavanje, smanjenje i resetiranje brojača
+    - potrebno je napraviti reducer koji reagira na navedene akcije i mijenja stanje (state) aplikacije prema tome
+    - potrebno je spojiti komponentu App na redux stanje pomoću metode "connect" i prikazati trenutno redux stanje
+
