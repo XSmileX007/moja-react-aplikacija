@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { dodajNaBrojac, oduzmiSaBrojaca, setirajBrojac } from './utilities/ReduxFunkcije';
 
-function App({ brojac, dodajJedan, oduzmiJedan, resetiraj }) {
+function AppRedux({ brojac, dodajJedan, oduzmiJedan, resetiraj }) {
   return (
     <div>
       <p>
@@ -34,4 +34,4 @@ const mapDispatchToProps = {
 export default connect(
   mapStateToProps,
   mapDispatchToProps,
-)(App);
+)(AppRedux);

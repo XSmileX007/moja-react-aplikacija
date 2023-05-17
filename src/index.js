@@ -20,13 +20,14 @@ import './index.css';
 // 5.20 - GraphQL
 //import AppGraphQL from './components/AppGraphQL';
 // 5.21 - Redux
-//import AppRedux from './components/AppRedux';
-//import { createStore } from 'redux';
-import { Provider } from 'react-redux';
-//import { reducer } from './components/utilities/ReduxFunkcije';
-// 5.21 - ReduxThunk
+// import AppRedux from './components/AppRedux';
+// import { createStore } from 'redux';
+// import { Provider } from 'react-redux';
+// import { reducer } from './components/utilities/ReduxFunkcije';
+// 5.22 - ReduxThunk
 import AppReduxThunk from './components/AppReduxThunk';
 import { reducer } from './components/utilities/ReduxThunkFunkcije';
+import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 
@@ -36,7 +37,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // added for 5.21 - redux
 //const store = createStore(reducer);
 //root.render(<AppGraphQL/>);
-// little bit changed render for 5.20 - redux
+//little bit changed render for 5.21 - redux
 // root.render(
 //     <Provider store={store}>
 //         <AppRedux/>
@@ -44,7 +45,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // );
 
 const store = createStore(reducer, applyMiddleware(thunk));
-// little bit changed render for 5.21 - redux
+// little bit changed render for 5.22 - redux
 root.render(
     <Provider store={store}>
         <AppReduxThunk/>
